@@ -1,6 +1,6 @@
 CREATE TABLE store_items (id INTEGER, pizza_name TEXT, toppings TEXT, preparation_time_in_minutes INTEGER, cost_in_dollars NUMERIC, customer_rating NUMERIC);
 
-INSERT INTO store_items VALUES(1, "Pepperoni Pineapply Pizza", "Pepperoni", 15, 9.99, 4.5);
+INSERT INTO store_items VALUES(1, "Pepperoni Pineapple Pizza", "Pepperoni", 15, 9.99, 4.5);
 INSERT INTO store_items VALUES(2, "Cheese Pizza", "N/A", 14, 8.95, 4.5);
 INSERT INTO store_items VALUES(3, "Meat Lover's Pizza", "Pepperoni, Hamburger, Ham, Sausage, Bacon", 17, 12.05, 5);
 INSERT INTO store_items VALUES(4, "Vegeterian Pizza", "Spinach, Tomatoes, Mushrooms, Basil, Peppers, Olives", 16, 11.95, 3.5);
