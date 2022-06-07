@@ -1,0 +1,22 @@
+CREATE TABLE store_items (id INTEGER, pizza_name TEXT, toppings TEXT, preparation_time_in_minutes INTEGER, cost_in_dollars NUMERIC, customer_rating NUMERIC);
+
+INSERT INTO store_items VALUES(1, "Pepperoni Pineapply Pizza", "Pepperoni", 15, 9.99, 4.5);
+INSERT INTO store_items VALUES(2, "Cheese Pizza", "N/A", 14, 8.95, 4.5);
+INSERT INTO store_items VALUES(3, "Meat Lover's Pizza", "Pepperoni, Hamburger, Ham, Sausage, Bacon", 17, 12.05, 5);
+INSERT INTO store_items VALUES(4, "Vegeterian Pizza", "Spinach, Tomatoes, Mushrooms, Basil, Peppers, Olives", 16, 11.95, 3.5);
+INSERT INTO store_items VALUES(5, "BBQ Chicken Pizza", "Chicken, BBQ sauce", 16, 12.00, 5);
+INSERT INTO store_items VALUES(6, "Anchovy Pizza", "Anchovies", 15, 12.15, 2.5);
+INSERT INTO store_items VALUES(7, "Mushroom Pizza", "Mushrooms", 16, 10.90, 4);
+INSERT INTO store_items VALUES(8, "White Pizza", "No Sauce, Garlic Seasoning", 14, 10.50, 5);
+INSERT INTO store_items VALUES(9, "Margarita Pizza", "Tomatoes, Fresh Mozzarella", 17, 11.99, 4);
+INSERT INTO store_items VALUES(10, "Chicken Fajita Pizza", "Chicken, Peppers, Onions", 16, 11.49, 4.5);
+INSERT INTO store_items VALUES(11, "Hawaiian Pizza", "Pineapple, Ham, Bacon", 17, 11.95, 4);
+INSERT INTO store_items VALUES(12, "Stuffed-Crust Pizza", "?", 16, 11.00, 5);
+INSERT INTO store_items VALUES(13, "Meatball Pizza", "Meatballs", 16, 10.55, 5);
+INSERT INTO store_items VALUES(14, "Make Your Own Pizza", "?", 16, 11.45, 5);
+INSERT INTO store_items VALUES(15, "Supreme Pizza", "EVERYTHING", 19, 15.00, 4.5);
+
+SELECT * FROM store_items;
+SELECT pizza_name, cost_in_dollars, customer_rating FROM store_items ORDER BY cost_in_dollars;
+SELECT Avg(customer_rating) AS "Average Customer Rating" FROM store_items;
+SELECT pizza_name, customer_rating FROM store_items WHERE customer_rating = 5;
